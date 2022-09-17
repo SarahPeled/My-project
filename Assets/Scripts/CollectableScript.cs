@@ -16,12 +16,6 @@ public class CollectableScript : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        other.gameObject.GetComponent<PlayerController>().score++;
-        Destroy(gameObject);
-    }
-
     void FixedUpdate()
     {
         transform.Rotate(1f, 1f, 1f);

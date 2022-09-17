@@ -16,13 +16,6 @@ public class SpecialCollectable : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        other.gameObject.GetComponent<PlayerController>().score+=5;
-
-        Destroy(gameObject);
-    }
-
     void FixedUpdate()
     {
         transform.Rotate(1f, 1f, 1f);
